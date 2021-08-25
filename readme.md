@@ -2,6 +2,9 @@
 
 Email Service is microservice to send out emails
 
+![architecture](https://user-images.githubusercontent.com/22448789/130808220-8561b0b1-a05c-4e52-a791-3b7126847559.png)
+
+
 ## Pre Reqs
 - [Node V12](https://nodejs.org/en/)
 
