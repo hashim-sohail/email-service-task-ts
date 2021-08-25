@@ -1,0 +1,27 @@
+name: Test CI
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    strategy:
+      matrix:
+        node-version: [12.0]
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Install Node Modules
+        run: npm install
+
+      - name: Test lint
+        run: npm run lint
+
+      - name: Test Cases
+        run: npm run test
